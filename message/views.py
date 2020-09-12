@@ -8,7 +8,6 @@ import os
 account_sid = os.environ.get('TWILIO_ACCOUNT_SID')
 auth_token = os.environ.get('TWILIO_AUTH_TOKEN')
 client = Client(account_sid, auth_token)
-messageSID = ""
 
 def home(request):
     return render(request, "home.html",)
@@ -41,6 +40,7 @@ def sendMessage(request):
     except:
         return render(request, "message_not_sent.html", {"messages": "Your message was not sent please check your number and try again"})
 
+messageSID = ""
 
 def reply(request):
     message = client.messages(messageSID).fetch()
