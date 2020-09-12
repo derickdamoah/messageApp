@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "dada5d024627.ngrok.io",
     "127.0.0.1",
+    "derickmessagingapp.herokuapp.com",
 ]
 
 
