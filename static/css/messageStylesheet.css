@@ -1,0 +1,158 @@
+/* FOR MOBILE */
+body {
+ background-color: white;
+}
+
+div {
+ background-color: #1e2d75;
+ color: white;
+ height: auto;
+ width: 100%;
+ border-radius: 4px;
+ padding: 20px 10px;
+ font-family: Arial;
+ margin: auto;
+}
+
+input[type=submit] {
+  width: 90%;
+  background-color: #09b55f; /* light green */
+  color: white;
+  padding: 20px 0px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #268053; /* dark green*/
+}
+
+select {
+  width: 35%;
+  padding: 10px 10px;
+  margin: 1px, 1px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+input[type=tel] {
+  width: 53%;
+  padding: 10px 10px;
+  margin: 1px, 1px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  padding: 10px 10px;
+  margin: 10px, 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+
+div.phoneNumber {
+  padding: 1px 0px;
+  width: 100%;
+}
+
+div.textarea {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+div.sendmessage {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+
+/* FOR DESKTOPS */
+@media only screen and (min-width: 600px) {
+body {
+ background-color: white;
+}
+
+div {
+ background-color: #1e2d75;
+ color: white;
+ height: auto;
+ width: 30%;
+ border-radius: 4px;
+ padding: 20px 20px;
+ font-family: Arial;
+ margin: auto;
+}
+
+input[type=submit] {
+  width: 90%;
+  background-color: #09b55f; /* light green */
+  color: white;
+  padding: 20px 0px;
+  margin: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #268053; /* dark green*/
+}
+
+select {
+  width: 33%;
+  padding: 20px 20px;
+  margin: 1px, 1px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+input[type=tel] {
+  width: 55%;
+  padding: 20px 20px;
+  margin: 10px, 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+textarea {
+  width: 95%;
+  height: 100px;
+  padding: 10px 10px;
+  margin: 10px, 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+
+div.phoneNumber {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+div.textarea {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+div.sendmessage {
+  padding: 10px 0px;
+  width: 100%;
+}
+}
