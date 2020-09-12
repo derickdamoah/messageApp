@@ -62,15 +62,15 @@ def reply(request):
                 reply_to = get_message_info.to
                 message_reply = "Reply:\n" + "Sent From: " + reply_from + "\n" + "Sent To: " \
                                 + reply_to + "\n" + "\n" + "Message Body: " + reply_body
-                return render(request, "reply.html", {"reply": message_reply, "messages":sentMessage})
+                return render(request, "reply.html", {"reply": message_reply, "messages":body})
 
         elif message.direction == 'outbound-api':
             message_reply = "This person is yet to reply"
-            return render(request, "reply.html", {"reply": message_reply, "messages": sentMessage})
+            return render(request, "reply.html", {"reply": message_reply, "messages": body})
 
         else:
             message_reply = "This person is yet to reply"
-            return render(request, "reply.html", {"reply": message_reply, "messages": sentMessage})
+            return render(request, "reply.html", {"reply": message_reply, "messages": body})
 
 @twilio_view
 def sms_response(request):
