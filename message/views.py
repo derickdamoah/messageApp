@@ -21,7 +21,7 @@ def home(request):
 def message(request):
     return render(request, "message.html",)
 
-messageSID = ""
+#messageSID = ""
 
 def sendMessage(request):
     try:
