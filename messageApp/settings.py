@@ -30,8 +30,6 @@ SECRET_KEY = 'd06n_0h+ii!h-*de#5yf2_etectnagbw_v&w+kh((p5#5dr3t_'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "dada5d024627.ngrok.io",
-    "127.0.0.1",
     "derickmessagingapp.herokuapp.com",
 ]
 
