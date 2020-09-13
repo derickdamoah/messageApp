@@ -35,8 +35,8 @@ def sendMessage(request):
         sender = message.from_
         receiver = message.to
         body = message.body
-        sentMessage = "Sent From: " + sender + "\n" + "Sent To: " + receiver + "\n" + "\n" + \
-                      "Message Body: " + body
+        sentMessage = "Sent From: " + sender + "\n" + "Sent To: " + receiver + "\n" + "\n" \
+                      + "Message Body: " + body
 
         return render(request, "sentMessages.html", {"messages":sentMessage})
 
@@ -49,8 +49,7 @@ def reply(request):
     sender = message.from_
     receiver = message.to
     body = message.body
-    sentMessage = "Sent From: " + sender + "\n" + "Sent To: " + receiver + "\n" + "\n" + \
-                  "Message Body: " + body
+    sentMessage = "Sent From: " + sender + "\n" + "Sent To: " + receiver + "\n" + "\n" + "Message Body: " + body
 
     allMessages = client.messages.list()
     lis = []
